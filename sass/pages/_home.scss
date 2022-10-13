@@ -1,0 +1,23 @@
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 25vh 0;
+    margin-top: -20vh;
+
+    display: grid;
+    grid-column-gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10rem min-content;
+
+    &__heading {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    &__content {
+        grid-column: 1 / 2;
+    }
+
+    &__images {
+        grid-column: 2 / 3;
+    }
+}
