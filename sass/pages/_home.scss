@@ -23,14 +23,15 @@
 }
 
 .section-features {
-    height: 95vh;
+    padding: 20rem 0;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8)),
         url('../img/nat-4.jpg');
     background-size: cover;
-    margin-top: -7rem;
+    margin-top: -8rem;
+    margin-bottom: 8rem;
 
     display: flex;
     justify-content: center;
@@ -44,5 +45,24 @@
     &__cards {
         display: flex;
         width: 80%;
+    }
+}
+
+.section-tours {
+    padding: 20rem 0;
+    margin-top: -20rem;
+    background-color: $color-grey-light-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(30rem, 1fr));
+        column-gap: 4rem;
+    }
+
+    &__button {
+        margin-top: 3rem;
     }
 }
