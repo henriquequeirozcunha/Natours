@@ -245,6 +245,10 @@ body {
       display: flex; }
       .tours-card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .tours-card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #55c57a, #28b485); }
+      .tours-card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .tours-card:hover .tours-card__side--front {
     transform: rotateY(-180deg); }
   .tours-card:hover .tours-card__side--back {
@@ -257,11 +261,11 @@ body {
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
     .tours-card__image--1 {
-      background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-5.jpg"); }
     .tours-card__image--2 {
-      background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url("../img/nat-6.jpg"); }
     .tours-card__image--3 {
-      background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg"); }
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url("../img/nat-7.jpg"); }
   .tours-card__heading {
     width: 60%;
     font-size: 2rem;
@@ -278,6 +282,10 @@ body {
     box-decoration-break: clone; }
     .tours-card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.85), rgba(40, 180, 133, 0.85)); }
+    .tours-card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .tours-card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .tours-card__content {
     width: 80%;
     margin: auto;
