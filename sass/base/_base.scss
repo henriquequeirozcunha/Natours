@@ -9,6 +9,34 @@
 html {
     // this defines what 1 rem is
     font-size: 62.5%;
+
+    // @include respond-phone {
+    //     font-size: 50%;
+    // }
+
+    @include respond(tab-land) {
+        html {
+            font-size: 56.25%;
+        }
+    }
+
+    @include respond(tab-port) {
+        html {
+            font-size: 50%;
+        }
+    }
+
+    @include respond(phone) {
+        html {
+            font-size: 30%;
+        }
+    }
+
+    @include respond(big-destkop) {
+        html {
+            font-size: 75%;
+        }
+    }
 }
 
 body {
