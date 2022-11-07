@@ -9,6 +9,10 @@
 
     min-height: 20rem; // temp
 
+    @include respond(tab-port) {
+        padding: 1rem 5rem;
+    }
+
     &__logo {
         width: 15rem;
         height: auto;
@@ -26,6 +30,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 10rem;
+
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__nav {
@@ -36,9 +44,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
 
         list-style: none;
         margin-top: 1rem;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -71,5 +84,9 @@
         border-top: 1px solid $color-grey-light-1;
 
         text-align: center;
+
+        @include respond(phone) {
+            padding-top: 3rem;
+        }
     }
 }

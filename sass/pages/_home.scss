@@ -45,6 +45,12 @@
     &__cards {
         display: flex;
         width: 80%;
+
+        @include respond(tab-port) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
     }
 }
 
@@ -60,6 +66,14 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(30rem, 1fr));
         column-gap: 4rem;
+
+        @include respond(tab-port) {
+            grid-template-columns: 50%;
+            column-gap: 0;
+            row-gap: 4rem;
+            justify-content: center;
+            width: 100%;
+        }
     }
 
     &__button {

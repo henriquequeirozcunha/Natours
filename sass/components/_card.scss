@@ -28,6 +28,11 @@
     &:hover {
         transform: scale(1.05) translateY(-1.5rem);
     }
+
+    @include respond(tab-port) {
+        flex-basis: 100%;
+        margin: 0 25% !important;
+    }
 }
 
 .tours-card {
